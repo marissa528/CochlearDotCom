@@ -1851,6 +1851,26 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='www.linkedin.com']//div[#'header-banner']//a[@title='LinkedIn']
 			</item>
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="6ba108ab-7bcb-4aaa-86ac-e6024fb95614"
+			name="LiIcon"
+			refimgid="3658dd11-5d72-47d3-9f51-9cbb561e82aa"
+			refpath="/dom[@domain='www.linkedin.com']/body/header/div/a/tag[@tagname='li-icon']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.linkedin.com']/?/?/header/?/?/a[@title='LinkedIn']/tag[@tagname='li-icon']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="85625426-e2e5-46da-8cb0-c6e261c54cee"
+			name="SignIn"
+			refimgid="d9055cd6-593c-4146-997f-1ce656f60796"
+			refpath="/dom[@domain='www.linkedin.com']/body/header/div/nav/ul/li[1]/a[@innertext='Sign in']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.linkedin.com']/?/?/header/?/?/nav/ul/?/?/a[@innertext='Sign in']
+			</item>
 			<basepath>
 				/dom[@domain='www.linkedin.com']
 			</basepath>
@@ -2093,6 +2113,74 @@ KQHQG9Oep0uw/XAAu+ERXPZu4PjlfOxcfm2toGzfrotQq99JfPLayPQZ8lcRhg+4bnT3WGsQMD2I
 vvsMWJmuMezRjfcf4gYB7a9HphRFEejGmnW1mAXgkCgANzPPymzlepN1BmEGwHdZAE6YAqgiQmZO
 bVi4WIat9j7c958EALXzfDgOKPoLZqMCCLLcigDVgjq4bzQ554B3CeDjqQfzjCAB02oirITjqR/+
 5dlm1YyjI3HIh7pbOqDq6NywEo5nOqzMw/LOiQzjF/lSGoPMCOJoAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="df7b39ec-0330-4d2f-9178-a3c9ccc4b069"
+		isrooted="True"
+		name="XKLTestingAutomationRanorexRegress"
+		refpath="/form[@title='X:\KL Testing\Automation\Ranorex\Regression...\N7UK - Repository Browser - TortoiseGit']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="af4d2f81-0bcf-4513-b048-07da3353d3e9"
+			name="Cancel"
+			refimgid="829f9918-871f-4181-a9ac-e69208b539c8"
+			refpath="/form[@title~'^X:\\KL\ Testing\\Automation\\' and @processname='TortoiseGitProc']/button[@text='Cancel']"
+			searchtimeout="30000ms">
+				/form[@processname='TortoiseGitProc']/button[@text='Cancel']
+			</item>
+			<basepath>
+				/form[@processname='TortoiseGitProc']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIcSURBVDhP1ZBLaBNRFIYHBRVcuBHEhbq0iAUX
+WlGEoviMkmJJCQWfNUVsMmMVNSa1mSZNtShU8rBNsKQ4NhGTtBMMwQdopNA0EeOiElCEQMhCqKuo
+kIiT+zt3GCdWXLhx4QeH87j3/8/lMv8nExPpFfcTL4/Gn7xuUkeLuTn6aNJs9eH0BR84m/frq7cf
+1qlHCru7LoPpCmKTvue9Omow/24hG5+VMJ2FFnvbe5F6lmmm5x3R6FKj6y7kEk07jhToTMM7Lobi
+GQlGEy/HAFyjac0klPoIfyjpdAwFpkulEtg+N7rPD84xgvB0papnLrrCiGfqZGqOKCJqQjPtT5iH
+0dxygORyOZJIJEi9Xiep1GPCWIeDq7LZLJzXfd8iL75oBlT8q0E+nwcV0Ugmk+Qsa5dsQ5E1yuaD
+Bi5iMplwTxAwODajveBnjs1+hyRJioG8jCii3zF2O2OBQAC1Wo1c4f245H6AsWAIsVgczht3YLFY
+sK3VMM96PMtVSQOejy4rFosghECn08mJgEK30poG/bh2Q+eft7P9/jYq4DgO+/Snkrv2HwfLsopQ
+fhE2b9d/KhQKEASBnDxnf67KGrhHptZWKhXInwOPx4PV61tQLpdRrVYhiiLOmPsXbDYbwuEwzFav
+oMoW4/aLW9qMPZ937ul4Q/vDnVdHHI4BpNNptB46Frh2++FGs318q3L5b+F5LOm7NblBbf8FDPMD
+H3pvJnCnfSEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="2654df99-4949-469f-8923-a7a15ddfd80a"
+		isrooted="True"
+		name="LinkedInLogInOrSignUpGoogleChr"
+		refimgid="be4caf40-da4f-41bc-b1a2-08628ef96273"
+		refpath="/form[@title~'^LinkedIn:\ Log\ In\ or\ Sign\ ']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title~'^LinkedIn:\ Log\ In\ or\ Sign\ ']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALpSURBVDhPrZJrSFNhHMZXQSAEfchpLawM+9AX
+8UNgV8/O3KzNzVu70C5qU6GgIIMiFBIC6aIRSIF3t5zRPUzTUqP71szNykvmdo7QCAxJym06tp3z
+dDyu+hB+64EH3g//3+/9v/AK/mu+qNVxtDEnfUorv0RrFV2UWu6g82Uf6DxZN5UnrfPkkqbx/P0b
+YuP/xqPOSqENuaO0+gDog/tBF2SBA0HlZoLKIbmzJEjlZZlj439jV++Me56dvu1jgazJq5EHlhN4
+VWLGo5RM0AVkRgxdyvFK3e7yM2pfry4zNL4ILLeBSgxvNgGPknBOKYi0bxpiDS/Ybi25kNpczFQe
+VbAuJYGxU+V4a+vEg0eTbOvALPtmoBtU50lM35Fj7v4uzHfv9i/07nOH+4gdvGCrrfTh1o5SKKp1
+eCHfA3t7J87eDsBwNYicy0FUdMzi0+dJzNmPIPosA9GX+5jo64wQXhFiXpBsK7Un20qQ2lCEpoME
+7vZQPJx/JQhVbRAl9X409s3ii7MGrIME85YE6yQZ9p1ExguSrMUjm9rN2GwzQ3XRiIb+AA8qF1sT
+hLYuiNM3AphwWQC3jKuUayZYt1SxJLAUPU5qP4ylmlH/bCh6zOKH4VoABdwWp2zf0eXwYma4kodZ
+VybDDEnmI0OkhBeIrKb6jdeL8btl/Y14OjKD6gdzKGvy494rL4bft8I/bOAFjIuDnaQn7BCn84KN
+VlOZyGKKiKyFrMhahLRbJ5DXVYtjT26hou8xrvacxw93ISLubH517nYfM0jWLtiJFF6Q2KbbktCs
+r1pvMU0lWkz4WyMSG/SgXyr+vBtuCSKDZBNGNatRVbWSF/CBYEVii0Gb0GocE7YZQgkcLGzV49xN
+FcO4ZCx3a5QZIqfDTrEVlHRtjPo3wma9RthyyBffpse6Rh2+vlGEODAaHhT/5OHR2O9bLutbDgs5
+wd74Fp0y6Vp+oe95VmHEJVGF7WIi5MrYDmhWxUa5CAS/AHJY5UDHeBMWAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

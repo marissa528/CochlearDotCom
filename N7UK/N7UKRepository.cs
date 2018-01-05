@@ -47,6 +47,8 @@ namespace N7UK
         N7UKRepositoryFolders.SoundProcessorComparisonGoogleChroAppFolder _soundprocessorcomparisongooglechro;
         N7UKRepositoryFolders.CochlearCompassGoogleChromeAppFolder _cochlearcompassgooglechrome;
         N7UKRepositoryFolders.FrmFloatingButtonAppFolder _frmfloatingbutton;
+        N7UKRepositoryFolders.XKLTestingAutomationRanorexRegressAppFolder _xkltestingautomationranorexregress;
+        N7UKRepositoryFolders.LinkedInLogInOrSignUpGoogleChrAppFolder _linkedinloginorsignupgooglechr;
 
         /// <summary>
         /// Gets the singleton class instance representing the N7UKRepository element repository.
@@ -83,6 +85,8 @@ namespace N7UK
             _soundprocessorcomparisongooglechro = new N7UKRepositoryFolders.SoundProcessorComparisonGoogleChroAppFolder(this);
             _cochlearcompassgooglechrome = new N7UKRepositoryFolders.CochlearCompassGoogleChromeAppFolder(this);
             _frmfloatingbutton = new N7UKRepositoryFolders.FrmFloatingButtonAppFolder(this);
+            _xkltestingautomationranorexregress = new N7UKRepositoryFolders.XKLTestingAutomationRanorexRegressAppFolder(this);
+            _linkedinloginorsignupgooglechr = new N7UKRepositoryFolders.LinkedInLogInOrSignUpGoogleChrAppFolder(this);
         }
 
 #region Variables
@@ -279,6 +283,24 @@ namespace N7UK
         public virtual N7UKRepositoryFolders.FrmFloatingButtonAppFolder FrmFloatingButton
         {
             get { return _frmfloatingbutton; }
+        }
+
+        /// <summary>
+        /// The XKLTestingAutomationRanorexRegress folder.
+        /// </summary>
+        [RepositoryFolder("df7b39ec-0330-4d2f-9178-a3c9ccc4b069")]
+        public virtual N7UKRepositoryFolders.XKLTestingAutomationRanorexRegressAppFolder XKLTestingAutomationRanorexRegress
+        {
+            get { return _xkltestingautomationranorexregress; }
+        }
+
+        /// <summary>
+        /// The LinkedInLogInOrSignUpGoogleChr folder.
+        /// </summary>
+        [RepositoryFolder("2654df99-4949-469f-8923-a7a15ddfd80a")]
+        public virtual N7UKRepositoryFolders.LinkedInLogInOrSignUpGoogleChrAppFolder LinkedInLogInOrSignUpGoogleChr
+        {
+            get { return _linkedinloginorsignupgooglechr; }
         }
     }
 
@@ -4631,6 +4653,8 @@ namespace N7UK
             RepoItemInfo _rectInfo;
             RepoItemInfo _pathInfo;
             RepoItemInfo _linkedinInfo;
+            RepoItemInfo _liiconInfo;
+            RepoItemInfo _signinInfo;
 
             /// <summary>
             /// Creates a new WebDocument1CochlearOverviewLink  folder.
@@ -4641,6 +4665,8 @@ namespace N7UK
                 _rectInfo = new RepoItemInfo(this, "Rect", ".//div[#'inbug-nav-item']/a[@href~'^https://www\\.linkedin\\.com/']/span[1]//tag[@tagname='g']/tag[5]/?/?/tag[@tagname='rect']", 30000, null, "baeb3e14-8a30-4d6d-bcdb-b4bc809ed827");
                 _pathInfo = new RepoItemInfo(this, "Path", ".//div[#'inbug-nav-item']/a[@href~'^https://www\\.linkedin\\.com/']/span[1]//tag[@tagname='g']/tag[5]/tag[2]/tag[@tagname='path']", 30000, null, "2ca55ad5-fa4b-4d26-9669-8f3807ea6ac6");
                 _linkedinInfo = new RepoItemInfo(this, "LinkedIn", ".//div[#'header-banner']//a[@title='LinkedIn']", 30000, null, "385e7855-504d-4d4b-9c67-04ac40fe3510");
+                _liiconInfo = new RepoItemInfo(this, "LiIcon", "?/?/header/?/?/a[@title='LinkedIn']/tag[@tagname='li-icon']", 30000, null, "6ba108ab-7bcb-4aaa-86ac-e6024fb95614");
+                _signinInfo = new RepoItemInfo(this, "SignIn", "?/?/header/?/?/nav/ul/?/?/a[@innertext='Sign in']", 30000, null, "85625426-e2e5-46da-8cb0-c6e261c54cee");
             }
 
             /// <summary>
@@ -4736,6 +4762,54 @@ namespace N7UK
                 get
                 {
                     return _linkedinInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LiIcon item.
+            /// </summary>
+            [RepositoryItem("6ba108ab-7bcb-4aaa-86ac-e6024fb95614")]
+            public virtual Ranorex.WebElement LiIcon
+            {
+                get
+                {
+                    return _liiconInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LiIcon item info.
+            /// </summary>
+            [RepositoryItemInfo("6ba108ab-7bcb-4aaa-86ac-e6024fb95614")]
+            public virtual RepoItemInfo LiIconInfo
+            {
+                get
+                {
+                    return _liiconInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignIn item.
+            /// </summary>
+            [RepositoryItem("85625426-e2e5-46da-8cb0-c6e261c54cee")]
+            public virtual Ranorex.ATag SignIn
+            {
+                get
+                {
+                    return _signinInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignIn item info.
+            /// </summary>
+            [RepositoryItemInfo("85625426-e2e5-46da-8cb0-c6e261c54cee")]
+            public virtual RepoItemInfo SignInInfo
+            {
+                get
+                {
+                    return _signinInfo;
                 }
             }
         }
@@ -4997,6 +5071,112 @@ namespace N7UK
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("7667f7c1-c528-4e69-8a17-249faf528223")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The XKLTestingAutomationRanorexRegressAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("df7b39ec-0330-4d2f-9178-a3c9ccc4b069")]
+        public partial class XKLTestingAutomationRanorexRegressAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cancelInfo;
+
+            /// <summary>
+            /// Creates a new XKLTestingAutomationRanorexRegress  folder.
+            /// </summary>
+            public XKLTestingAutomationRanorexRegressAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("XKLTestingAutomationRanorexRegress", "/form[@processname='TortoiseGitProc']", parentFolder, 30000, null, true, "df7b39ec-0330-4d2f-9178-a3c9ccc4b069", "")
+            {
+                _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@text='Cancel']", 30000, null, "af4d2f81-0bcf-4513-b048-07da3353d3e9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("df7b39ec-0330-4d2f-9178-a3c9ccc4b069")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("df7b39ec-0330-4d2f-9178-a3c9ccc4b069")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item.
+            /// </summary>
+            [RepositoryItem("af4d2f81-0bcf-4513-b048-07da3353d3e9")]
+            public virtual Ranorex.Button Cancel
+            {
+                get
+                {
+                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item info.
+            /// </summary>
+            [RepositoryItemInfo("af4d2f81-0bcf-4513-b048-07da3353d3e9")]
+            public virtual RepoItemInfo CancelInfo
+            {
+                get
+                {
+                    return _cancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The LinkedInLogInOrSignUpGoogleChrAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2654df99-4949-469f-8923-a7a15ddfd80a")]
+        public partial class LinkedInLogInOrSignUpGoogleChrAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new LinkedInLogInOrSignUpGoogleChr  folder.
+            /// </summary>
+            public LinkedInLogInOrSignUpGoogleChrAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("LinkedInLogInOrSignUpGoogleChr", "/form[@title~'^LinkedIn:\\ Log\\ In\\ or\\ Sign\\ ']", parentFolder, 30000, null, true, "2654df99-4949-469f-8923-a7a15ddfd80a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2654df99-4949-469f-8923-a7a15ddfd80a")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2654df99-4949-469f-8923-a7a15ddfd80a")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
