@@ -49,6 +49,7 @@ namespace N7UK
         N7UKRepositoryFolders.FrmFloatingButtonAppFolder _frmfloatingbutton;
         N7UKRepositoryFolders.XKLTestingAutomationRanorexRegressAppFolder _xkltestingautomationranorexregress;
         N7UKRepositoryFolders.LinkedInLogInOrSignUpGoogleChrAppFolder _linkedinloginorsignupgooglechr;
+        N7UKRepositoryFolders.CochlearLinkedInGoogleChromeAppFolder _cochlearlinkedingooglechrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the N7UKRepository element repository.
@@ -87,6 +88,7 @@ namespace N7UK
             _frmfloatingbutton = new N7UKRepositoryFolders.FrmFloatingButtonAppFolder(this);
             _xkltestingautomationranorexregress = new N7UKRepositoryFolders.XKLTestingAutomationRanorexRegressAppFolder(this);
             _linkedinloginorsignupgooglechr = new N7UKRepositoryFolders.LinkedInLogInOrSignUpGoogleChrAppFolder(this);
+            _cochlearlinkedingooglechrome = new N7UKRepositoryFolders.CochlearLinkedInGoogleChromeAppFolder(this);
         }
 
 #region Variables
@@ -301,6 +303,15 @@ namespace N7UK
         public virtual N7UKRepositoryFolders.LinkedInLogInOrSignUpGoogleChrAppFolder LinkedInLogInOrSignUpGoogleChr
         {
             get { return _linkedinloginorsignupgooglechr; }
+        }
+
+        /// <summary>
+        /// The CochlearLinkedInGoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("8ddb12d4-15ca-4dc3-9813-a7ae602b3f79")]
+        public virtual N7UKRepositoryFolders.CochlearLinkedInGoogleChromeAppFolder CochlearLinkedInGoogleChrome
+        {
+            get { return _cochlearlinkedingooglechrome; }
         }
     }
 
@@ -4655,6 +4666,7 @@ namespace N7UK
             RepoItemInfo _linkedinInfo;
             RepoItemInfo _liiconInfo;
             RepoItemInfo _signinInfo;
+            RepoItemInfo _linkedin1Info;
 
             /// <summary>
             /// Creates a new WebDocument1CochlearOverviewLink  folder.
@@ -4667,6 +4679,7 @@ namespace N7UK
                 _linkedinInfo = new RepoItemInfo(this, "LinkedIn", ".//div[#'header-banner']//a[@title='LinkedIn']", 30000, null, "385e7855-504d-4d4b-9c67-04ac40fe3510");
                 _liiconInfo = new RepoItemInfo(this, "LiIcon", "?/?/header/?/?/a[@title='LinkedIn']/tag[@tagname='li-icon']", 30000, null, "6ba108ab-7bcb-4aaa-86ac-e6024fb95614");
                 _signinInfo = new RepoItemInfo(this, "SignIn", "?/?/header/?/?/nav/ul/?/?/a[@innertext='Sign in']", 30000, null, "85625426-e2e5-46da-8cb0-c6e261c54cee");
+                _linkedin1Info = new RepoItemInfo(this, "LinkedIn1", "?/?/header/?/?/a[@title='LinkedIn']", 30000, null, "5a4dd264-eee2-43c2-9654-48d7353d6fe7");
             }
 
             /// <summary>
@@ -4810,6 +4823,30 @@ namespace N7UK
                 get
                 {
                     return _signinInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkedIn1 item.
+            /// </summary>
+            [RepositoryItem("5a4dd264-eee2-43c2-9654-48d7353d6fe7")]
+            public virtual Ranorex.ATag LinkedIn1
+            {
+                get
+                {
+                    return _linkedin1Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkedIn1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5a4dd264-eee2-43c2-9654-48d7353d6fe7")]
+            public virtual RepoItemInfo LinkedIn1Info
+            {
+                get
+                {
+                    return _linkedin1Info;
                 }
             }
         }
@@ -5177,6 +5214,46 @@ namespace N7UK
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("2654df99-4949-469f-8923-a7a15ddfd80a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CochlearLinkedInGoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("8ddb12d4-15ca-4dc3-9813-a7ae602b3f79")]
+        public partial class CochlearLinkedInGoogleChromeAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new CochlearLinkedInGoogleChrome  folder.
+            /// </summary>
+            public CochlearLinkedInGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CochlearLinkedInGoogleChrome", "/form[@title~'^Cochlear\\ \\|\\ LinkedIn\\ -\\ Goo']", parentFolder, 30000, null, true, "8ddb12d4-15ca-4dc3-9813-a7ae602b3f79", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8ddb12d4-15ca-4dc3-9813-a7ae602b3f79")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8ddb12d4-15ca-4dc3-9813-a7ae602b3f79")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
